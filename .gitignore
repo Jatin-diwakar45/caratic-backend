@@ -12,6 +12,8 @@ lerna-debug.log*
 .pnpm-debug.log*
 
 # Environment variables
+./env
+.env.example
 .env
 .env.test
 .env.production
