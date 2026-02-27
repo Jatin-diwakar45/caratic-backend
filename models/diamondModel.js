@@ -6,7 +6,7 @@ const diamondSchema = new mongoose.Schema(
     stockId: { type: String, required: true },
     availability: {
       type: String,
-      enum: ["AVAILABLE", "SOLD", "PENDING", "ARCHIVED"],
+      enum: ["AVAILABLE", "SOLD", "PENDING", "ARCHIVED"],     // <--- Error is here --->Diamond validation failed: availability: 'Available' is not a valid enum value for path 'availability'.
       default: "AVAILABLE",
       required: true,
     },

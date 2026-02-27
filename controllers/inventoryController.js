@@ -188,7 +188,7 @@ const syncFromApi = asyncHandler(async (req, res) => {
 
     const result = await syncInventoryFromApi(
       apiUrl,
-      JSON.parse(mapping),
+      JSON.parse(mapping),      // <-- Error is here -->
       userIdToAssign
     );
 
